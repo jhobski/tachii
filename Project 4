@@ -1,0 +1,19 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+    int counter, kmPerHour;
+    const double milesConv = 0.6421;
+
+    cout << "kilometers/hr\tmiles/hr" << endl;
+
+    for (counter = 0, kmPerHour = 60; counter < 10; counter++, kmPerHour += 5)
+    {
+        cout << fixed << setprecision(2) << setw(5) << left << kmPerHour << "km/hr\t" << kmPerHour * milesConv << "miles/hr" << endl;
+    }
+
+    return 0;
+}
