@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    char Grade;
+
+    cout << "Enter letter grade: ";
+    cin >> Grade;
+
+    switch (Grade) 
+    {
+        case 'A': cout << "V.Good!" << endl; break;
+        case 'B': cout << "Good!" << endl; break;
+        case 'C': cout << "Good!" << endl; break;
+        case 'D': cout << "Fair!" << endl; break;
+        default:cout << "Poor!" << endl;
+    }
+
+    return 0;
+}
